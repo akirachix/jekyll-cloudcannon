@@ -4,6 +4,18 @@
   defer></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"
   defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js" crossorigin="anonymous"
+  ></script>
+
 
   <!-- main js file-->
   <script src="{{ '/js/main.js' | prepend: site.baseurl }}" defer></script>
+
+  <script>
+    var scrollOptions = {
+      damping: 0.05
+    }
+    var Scrollbar = window.Scrollbar;
+
+      Scrollbar.init(document.querySelector('#my-scrollbar'), scrollOptions);
+  </script>
