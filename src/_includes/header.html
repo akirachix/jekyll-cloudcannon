@@ -1,24 +1,16 @@
-<header id="pageHeader" class="bg-dark text-white">
+<header id="pageHeader" class="bg-light text-dark">
   <div class="container">
     <nav id="mainnav" class="navbar navbar-expand-md navbar-dark">
-      <a class="navbar-brand" href="/">{{ site.title }}</a>
+      <a class="navbar-brand" href="/">
+        <img src="/img/logo-icon.svg" alt="Ocupop" style="width: 20px;">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primarynav" aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
         <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Examples
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              {% for example in site.examples %}
-                <a class="dropdown-item" href="{{ example.url }}">{{ example.title }}</a>
-              {% endfor %}
-            </div>
-          </li>
+
         </ul>
       </div>
     </nav>
