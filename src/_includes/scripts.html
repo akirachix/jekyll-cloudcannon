@@ -12,10 +12,12 @@
   <script src="{{ '/js/main.js' | prepend: site.baseurl }}" defer></script>
 
   <script>
+
+    // set options for smooth-scrollbar plugin and
     var scrollOptions = {
-      damping: 0.05
+      damping: 0.08
     }
     var Scrollbar = window.Scrollbar;
 
-      Scrollbar.init(document.querySelector('#my-scrollbar'), scrollOptions);
+      Scrollbar.init(document.querySelector('#custom-scrollbar'), scrollOptions);
   </script>
